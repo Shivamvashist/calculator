@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI CALC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="Stylesheet" href="style/calc.css">
+</head>
+
+<body>
+    <div class="calc-container">
+        <div class="calc">
+            <div class="output">
+                <p id="display"></p>
+            </div>
+            <div class="calc-keys">
+                <div class="ln">
+                    <button onclick="getnum('7')" class="num-key">7</button>
+                    <button onclick="getnum('8')" class="num-key">8</button>
+                    <button onclick="getnum('9')" class="num-key">9</button>
+                    <button onclick="getnum('/')" class="fun-key">÷</button>
+                </div>
+                <div class="ln">
+                    <button onclick="getnum('4')" class="num-key">4</button>
+                    <button onclick="getnum('5')" class="num-key">5</button>
+                    <button onclick="getnum('6')" class="num-key">6</button>
+                    <button onclick="getnum('*')" class="fun-key">&#215;</button>
+                </div>
+                <div class="ln3">
+                    <button onclick="getnum('1')" class="num-key">1</button>
+                    <button onclick="getnum('2')" class="num-key">2</button>
+                    <button onclick="getnum('3')" class="num-key">3</button>
+                    <button onclick="getnum('-')" class="fun-key">-</button>
+                </div>
+                <div class="ln4">
+                    <button onclick="getnum('0')" class="num-key">0</button>
+                    <button onclick="sol()" class="ans">=</button>
+                    <button onclick="del()" class="del">⌫</button>
+                    <button onclick="getnum('+')" class="fun-key">+</button>
+                </div>
+    
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+body{
+    margin:0;
+    color: white;
+    height: 100vh;
+}
+button{
+    color: white;
+    padding: 0;
+    font-size: 19px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.calc-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.calc{
+    
+    height: 320px;
+    width: 322.5px;
+    background-color: black;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.output{
+    width: 280px;
+    height: 60px;
+    margin-bottom: 10px;
+    border: 0;
+    font-size: 28px;
+
+    appearance: none;
+    background-color: rgba(71, 66, 66, 0.342);
+    color: white;
+    text-align: right;
+
+    border-radius: 80px;
+    padding:0 20px ;
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.calc-keys{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    
+}
+.ln{
+    width: 100%;
+}
+
+
+.num-key, .fun-key, .ans, .del{
+    
+    border-radius: 100px;
+    border: 0;
+    width: 65px;
+    height: 50px;
+    margin-left: 10px;
+
+}
+
+.num-key, .ans{
+    background-color: rgb(70,70,70);
+}
+.num-key:active, .ans:active{
+    background-color: rgb(54, 54, 54);
+}
+
+.fun-key{
+    background-color: #9e8204;
+    margin-right: 10px;
+    font-size: 29px;
+}
+.fun-key:active{
+    background-color: orangered;
+
+}
+
+.del{
+    background-color: #ca3900;
+}
+.del:active{
+    background-color: rgba(255, 0, 0, 0.459);
+}
